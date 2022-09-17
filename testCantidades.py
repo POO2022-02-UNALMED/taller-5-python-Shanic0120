@@ -72,3 +72,5 @@ def testCantidadPeces():
     if Pez.salmones == 1 and Pez.bacalaos == 2:
         ok = True
     assert(ok)
+
+testCantidadAnfibios()

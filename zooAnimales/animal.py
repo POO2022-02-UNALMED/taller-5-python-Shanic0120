@@ -1,4 +1,8 @@
 from mamifero import Mamifero
+from ave import Ave
+from anfibio import Anfibio
+from reptil import Reptil
+from pez import Pez
 
 class Animal:
     _totalAnimales=0
@@ -9,15 +13,17 @@ class Animal:
         self._genero=genero
         self._zona=None
         Animal._totalAnimales=Animal._totalAnimales+1
-    
+
+    def __str__(self):
+        if self._zona!=None:
+            return "Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s, la zona en la que me ubico es %s, en el %s"%(self._nombre,self._edad,self._habitat,self._genero,self._zona,self._zona.getZoo())
+        else:
+            return "Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s"%(self._nombre,self._edad,self._habitat,self._genero)
+
+
     @classmethod
     def totalPorTipo(cls):
-        return 'Mamiferos: %s\nAves: %s\nReptiles: %s\nPeces: %s\nAnfibos: %s'%(Mamifero.cantidadMamiferos(),2,3,4,5)
+        return 'Mamiferos: %s\nAves: %s\nReptiles: %s\nPeces: %s\nAnfibos: %s'%(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
 
     def setZona(self,zona):
         self._zona=zona
-
-
-a=Animal()
-
-print(a.totalPorTipo())
