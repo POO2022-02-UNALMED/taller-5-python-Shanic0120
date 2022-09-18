@@ -25,5 +25,5 @@ class Anfibio(Animal):
     def getColorPiel(self):
         return self._colorPiel
 
-    def getVenenoso(self):
+    def isVenenoso(self):
         return self._venenoso
