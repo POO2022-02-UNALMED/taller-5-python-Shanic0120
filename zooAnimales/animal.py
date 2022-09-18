@@ -1,9 +1,3 @@
-from mamifero import Mamifero
-from ave import Ave
-from anfibio import Anfibio
-from reptil import Reptil
-from pez import Pez
-
 class Animal:
     _totalAnimales=0
     def __init__(self,nombre=None,edad=0,habitat=None,genero=None):
@@ -23,6 +17,11 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
+        from mamifero import Mamifero
+        from ave import Ave
+        from anfibio import Anfibio
+        from reptil import Reptil
+        from pez import Pez
         return 'Mamiferos: %s\nAves: %s\nReptiles: %s\nPeces: %s\nAnfibos: %s'%(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
 
     def setZona(self,zona):
