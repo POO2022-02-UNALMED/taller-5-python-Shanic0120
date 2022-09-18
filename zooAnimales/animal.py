@@ -8,7 +8,7 @@ class Animal:
         self._zona=None
         Animal._totalAnimales=Animal._totalAnimales+1
 
-    def __str__(self):
+    def toString(self):
         if self._zona!=None:
             return "Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s, la zona en la que me ubico es %s, en el %s"%(self._nombre,self._edad,self._habitat,self._genero,self._zona,self._zona.getZoo())
         else:

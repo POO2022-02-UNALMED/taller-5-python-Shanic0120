@@ -1,5 +1,6 @@
 from gestion.zona import Zona
-from gestion.zoologico import Zoologico 
+from gestion.zoologico import Zoologico
+from testRetornos import testToString 
 from zooAnimales.anfibio import Anfibio
 from zooAnimales.ave import Ave
 from zooAnimales.mamifero import Mamifero
@@ -72,5 +73,3 @@ def testCantidadPeces():
     if Pez.salmones == 1 and Pez.bacalaos == 2:
         ok = True
     assert(ok)
-
-#testCantidadAnfibios()
