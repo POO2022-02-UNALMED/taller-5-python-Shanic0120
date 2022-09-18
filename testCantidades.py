@@ -73,4 +73,4 @@ def testCantidadPeces():
         ok = True
     assert(ok)
 
-testCantidadAnfibios()
+#testCantidadAnfibios()
