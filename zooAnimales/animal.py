@@ -19,6 +19,16 @@ class Animal:
 
     def getEdad(self):
         return self._edad
+
+    def getHabitat(self):
+        return self._habitat
+
+    def getGenero(self):
+        return self._genero
+
+    def getZona(self):
+        return self._zona
+
     @classmethod
     def totalPorTipo(cls):
         from zooAnimales.mamifero import Mamifero
