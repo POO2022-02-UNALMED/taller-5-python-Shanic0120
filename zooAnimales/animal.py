@@ -14,6 +14,8 @@ class Animal:
         else:
             return "Mi nombre es %s, tengo una edad de %s, habito en %s y mi genero es %s"%(self._nombre,self._edad,self._habitat,self._genero)
 
+    def getNombre(self):
+        return self._nombre
 
     @classmethod
     def totalPorTipo(cls):
