@@ -36,7 +36,7 @@ class Animal:
         from zooAnimales.anfibio import Anfibio
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
-        return 'Mamiferos: %s\nAves: %s\nReptiles: %s\nPeces: %s\nAnfibos: %s'%(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
+        return 'Mamiferos : %s\nAves : %s\nReptiles : %s\nPeces : %s\nAnfibos : %s'%(Mamifero.cantidadMamiferos(),Ave.cantidadAves(),Reptil.cantidadReptiles(),Pez.cantidadPeces(),Anfibio.cantidadAnfibios())
 
     def setZona(self,zona):
         self._zona=zona

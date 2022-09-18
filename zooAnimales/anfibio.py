@@ -22,3 +22,8 @@ class Anfibio(Animal):
         cls.salamandras+=1
         return Anfibio(colorPiel="negro y amarillo",venenoso=False,habitat="selva",nombre=nombre,edad=edad,genero=genero)
 
+    def getColorPiel(self):
+        return self._colorPiel
+
+    def getVenenoso(self):
+        return self._venenoso

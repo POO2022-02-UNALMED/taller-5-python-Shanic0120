@@ -22,3 +22,8 @@ class Pez(Animal):
         Pez.bacalaos+=1
         return Pez(colorEscamas="gris",cantidadAletas=6,habitat="oceano",nombre=nombre,edad=edad,genero=genero)
 
+    def getCantidadAletas(self):
+        return self._cantidadAletas
+    
+    def getColorEscamas(self):
+        return self._colorEscamas

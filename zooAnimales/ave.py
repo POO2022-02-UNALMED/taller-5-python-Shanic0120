@@ -20,3 +20,7 @@ class Ave(Animal):
     def crearAguila(cls,nombre,edad,genero):
         cls.aguilas+=1
         return Ave(colorPlumas="blanco y amarillo",habitat="montanas",nombre=nombre,edad=edad,genero=genero)
+
+    
+    def getColorPlumas(self):
+        return self._colorPlumas
