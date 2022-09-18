@@ -17,6 +17,8 @@ class Animal:
     def getNombre(self):
         return self._nombre
 
+    def getEdad(self):
+        return self._edad
     @classmethod
     def totalPorTipo(cls):
         from zooAnimales.mamifero import Mamifero
